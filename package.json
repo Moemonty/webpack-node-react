@@ -1,0 +1,47 @@
+{
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "18.x || 16.x"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack --config webpack.prod.js",
+    "build-dev": "webpack --config webpack.dev.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@bugsnag/browser-performance": "^1.1.0",
+    "@bugsnag/js": "^7.21.0",
+    "@bugsnag/plugin-react": "^7.19.0",
+    "babel-loader": "^9.1.3",
+    "ejs": "^3.1.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "express": "^4.18.2",
+    "got": "^11.3.0",
+    "html-webpack-plugin": "^5.5.3",
+    "tape": "^4.7.0",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-middleware": "^6.1.1",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-merge": "^5.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
