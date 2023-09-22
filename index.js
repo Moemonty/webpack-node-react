@@ -8,10 +8,12 @@ const PORT = process.env.PORT || 5001
 
 
 if (process.env.ENVIRONMENT == 'PRODUCTION') {
+  console.log(process.env.ENVIRONMENT, 'env var');
   express()
     .use('/', express.static(path.resolve(__dirname, 'dist'))
   ).listen(PORT, () => console.log(`Listening on ${ PORT }`))
 } else {
+  console.log(process.env.ENVIRONMENT, 'env var');
   express().use(
     webpackDevMiddleware(compiler, {
       publicPath: config.output.publicPath,
