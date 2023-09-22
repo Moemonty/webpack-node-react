@@ -8,7 +8,7 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin()],
   output: {
     filename: '[name].bundle.js',
-    sourceMapFilename: "[name].js.map",
+    sourceMapFilename: "[name].bundle.js.map",
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/',
   },
@@ -28,6 +28,7 @@ module.exports = {
       },
     ],
   },
+  devtool: "source-map",
   devServer: {
     static: './dist',
   },
